@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+</head>
+<body style="background-image: url('./Images/login.jpg');background-repeat: no-repeat;background-size:cover;">
+<center>
+    <!-- Form for user login -->
+    <h2 style="background-color:gray; width: 500px; height: 50px;">
+        <h2>User Login Form</h2>
+        <form action="login.php" method="post">
+            <label>Email:</label><br>
+            <input type="email" name="email" required style="color: grey;"><br>
+            <label>Password:</label><br>
+            <input type="password" name="password" required style="color:black;"><br>
+            <p style="font-size: 20px;"><a href="forgot_password.php">Forgot Password</a></p>
+    
+            <input type="submit" value="Login">
+            <input type="reset" value="Cancel">
+            
+        <p style="font-size: 20px;"><i>If You don't have account?</i> <a href="register.html">
+            Create New Account</a></p>
+        </form>
+</center>
+</body>
+</html>

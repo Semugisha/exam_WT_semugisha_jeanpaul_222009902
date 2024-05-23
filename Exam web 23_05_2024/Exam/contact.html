@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Linking to external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+  <!-- Defining character encoding -->
+  <meta charset="utf-8">
+  <!-- Setting viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Page</title>
+  <style>
+    /* CSS styles for the page */
+    /* Normal link */
+    a {
+      padding: 10px;
+      color: white;
+      background-color:pink;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    /* Visited link */
+    a:visited {
+      color: beige;
+    }
+
+    /* Unvisited link */
+    a:link {
+      color: beige;
+    }
+
+    /* Hover effect */
+    a:hover {
+      background-color: beige;
+    }
+
+    /* Active link */
+    a:active {
+      background-color: burlywood;
+    }
+
+    /* Extend margin left for search button */
+    button.btn {
+      margin-left: 15px;
+      margin-top: 4px;
+    }
+
+    input.form-control {
+      margin-left: 500px;
+      padding: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    /* Header style */
+    header {
+      background-color: beige;
+      padding: 10px;
+      text-align: center;
+    }
+    .dropdown {
+    position: relative;
+    display: inline;
+    margin-right: 10px;
+
+  }
+  .dropdown-contents {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 0; /* Aligning dropdown contents to the left */
+  }
+  .dropdown:hover .dropdown-contents {
+    display: block;
+  }
+  .dropdown-contents a {
+    color: white;
+    padding: 12px 32px;
+    text-decoration: none;
+    display: block;
+  }
+  </style>
+  </head>
+
+  <header>
+
+<body style="background-image: url('./image/carpool.jpg'); background-repeat: no-repeat; background-size: cover;">
+  <header>
+    <h1>Home</h1>
+  </header>
+  <form class="d-flex" role="search" action="search.php">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  <ul style="list-style-type: none; padding: 0;">
+    <li style="display: inline; margin-right: 10px;">
+    <img src="./logo.jpg" width="90" height="60" alt="Logo">
+  </li>
+  <li style="display: inline; margin-right: 10px;"><a href="./home.html">Home</a>
+  </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./about.html">About</a>
+  </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./contact.html">Contact</a>
+  </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./attendees.php"> Attendees</a>
+  </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./classes.php"> Classes</a>
+  </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./feedback.php"> Feedback</a>
+  </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./instructors.php"> Instructors</a>
+  </li>
+  </li>  <li style="display: inline; margin-right: 10px;"><a href="./profile.php"> Profile</a>
+  </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./resources.php"> Resources</a>
+  </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./schedules.php"> Schedules</a>
+  </li>
+<li style="display: inline; margin-right: 10px;"><a href="./subscriptions.php">Subscriptions</a>
+  </li>
+  <li style="display: inline; margin-right: 10px;"><a href="./payments.php">Payments</a>
+  </li>
+    <li class="dropdown" style="display: inline; margin-right: 10px;">
+      <a href="#" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">Settings</a>
+      <div class="dropdown-contents">
+        <!-- Links inside the dropdown menu -->
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="logout.php">Logout</a>
+      </div>
+    </li><br><br>
+    
+    
+    
+  </ul>
+
+</header>
+
+<section>
+	<h2><bold><u> OUR CONTACT US</u></bold></h2>
+<ul></ul>
+  <li>Address: 125 Main Street, huye city, State</li>
+  <li>Phone: +250 784432129</li>
+  <li>Email: info@speechtherappy.com</li>
+</ul>
+
+<form action="submit_contact" method="POST">
+  <label for="name">Names:</label><br>
+  <input type="text" id="name" name="name" required><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br>
+
+  <label for="phone">Telephone:</label><br>
+  <input type="tel" id="phone" name="phone"><br>
+
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message" rows="4" required></textarea>
+
+  <input type="submit" value="send">
+</form>
+<p>Connect with us on social media or social networkings:
+
+  <a href="https://www.twitter.com/VIRTUAL_MEDITATION_CLASSES_PLATFORM">Twitter</a>
+  <a href="https://www.facebook.com/VIRTUAL_MEDITATION_CLASSES_PLATFORM">Facebook</a>
+  <a href="https://www.instagram.com/VIRTUAL_MEDITATION_CLASSES_PLATFORM">Instagram</a>
+  <a href="https://www.linkedin.com/VIRTUAL_MEDITATION_CLASSES_PLATFORM">LinkedIn</a>
+</p>
+</section>
+
+<footer>
+  <center> 
+     <b><h2>UR CBE BIT &copy, 2024 &reg, Designed by:Jeanpaul Semugisha</h2></b>
+  </center>
+</footer>
+  
+</body>
+</html>
+
+
